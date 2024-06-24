@@ -2,11 +2,11 @@ package org.example;
 
 import java.util.ArrayList;
 
-public class GetListOfIDs {
+public class GetListPOJO {
     public boolean isSuccess;
     public int errorCode;
     public String errorMessage;
-    public ArrayList idList;
+    public ArrayList<Integer> idList;
 
     public boolean isSuccess() {
         return isSuccess;
@@ -32,7 +32,7 @@ public class GetListOfIDs {
         this.errorMessage = errorMessage;
     }
 
-    public ArrayList getIdList() {
+    public ArrayList<Integer> getIdList() {
         return idList;
     }
 
@@ -40,14 +40,14 @@ public class GetListOfIDs {
         this.idList = idList;
     }
 
-    public GetListOfIDs(boolean isSuccess, int errorCode, String errorMessage, ArrayList idList) {
+    public GetListPOJO(boolean isSuccess, int errorCode, String errorMessage, ArrayList<Integer> idList) {
         this.isSuccess = isSuccess;
         this.errorCode = errorCode;
         this.errorMessage = errorMessage;
         this.idList = idList;
     }
 
-    public GetListOfIDs() {
+    public GetListPOJO() {
 
     }
 }
